@@ -1,3 +1,3 @@
 export function selectAllHomePages(reduxState) {
-  return reduxState.home;
+  return reduxState.HomePageSliceReducer.doggo.bitch;
 }

@@ -131,10 +131,10 @@ You will be provided with a wireframe that shows an overview of the app along wi
 
 | Criteria                                                                   | Points |
 | -------------------------------------------------------------------------- | ------ |
-| The frontend route `/` displays a list of homepages                        | 1      |
-| The homepages have a backgroundColor and color as specified by their users | 1      |
-| The data is managed using Redux                                            | 2      |
-| Each homepage has a `Visit page` button, it links to a homepage's details  | 1      |
+| The frontend route `/` displays a list of homepages                        | 1      | check |
+| The homepages have a backgroundColor and color as specified by their users | 1      | check |
+| The data is managed using Redux                                            | 2      | check |
+| Each homepage has a `Visit page` button, it links to a homepage's details  | 1      | CHECK |
 | Total                                                                      | 5      |
 
 ### 2. As a user interested in people's lives, I want to read people's stories, so I can be informed
@@ -144,7 +144,7 @@ You will be provided with a wireframe that shows an overview of the app along wi
 
 | Criteria                                                                  | Points |
 | ------------------------------------------------------------------------- | ------ |
-| The frontend route `/homepages/:id` displays a detail page for a homepage | 1      |
+| The frontend route `/homepages/:id` displays a detail page for a homepage | 1      | CHECK |
 | The stories are displayed with a name, description and an image           | 1      |
 | The homepage and its stories are queried from the database using 1 query  | 2      |
 | The homepage has a backgroundColor and color as specified by their user   | 1      |

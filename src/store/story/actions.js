@@ -9,31 +9,31 @@ export function startLoading() {
   };
 }
 
-export function postsFetched(listofHomepages) {
+export function fetchStories(listofStories) {
   return {
-    type: "FETCHED_PAGES",
-    payload: listofHomepages,
+    type: "FETCHED_STORIES",
+    payload: listofStories,
   };
 }
 
-export async function homePages(dispatch, getState) {
+export async function detailPages(dispatch, getState) {
   try {
-    console.log("And this?");
+    console.log("FIrst");
     dispatch(appLoading());
 
-    console.log("Hello");
+    console.log("HeSecondllo");
 
-    const [pageRes, userRes] = await Promise.all([
-      axios.get(`${apiUrl}/home`),
+    const [storyRes, userRes] = await Promise.all([
+      axios.get(`${apiUrl}/story`),
       //   axios.get(`${apiUrl}/home/${id}`),
     ]);
 
-    console.log("All PAGES", pageRes.data);
-    const bitch = pageRes.data;
+    console.log("All STORIES", storyRes.data);
+    const lollie = storyRes.data;
     dispatch(appDoneLoading());
     dispatch(
-      postsFetched({
-        bitch,
+      fetchStories({
+        lollie,
         // user: userRes,
       })
     );

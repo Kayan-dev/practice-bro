@@ -9,7 +9,7 @@ import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
 import HomePage from "./pages/Homepage";
 import MyPage from "./pages/Mypage";
-
+import DetailPage from "./pages/DetailPage";
 import { useDispatch, useSelector } from "react-redux";
 import { selectAppLoading } from "./store/appState/selectors";
 import { getUserWithStoredToken } from "./store/user/actions";
@@ -29,6 +29,7 @@ function App() {
       {isLoading ? <Loading /> : null}
       <Switch>
         <Route exact path="/" component={HomePage} />
+        <Route exact path="/homepages/:id?" component={DetailPage} />
         <Route path="/mypage" component={MyPage} />
         <Route path="/signup" component={SignUp} />
         <Route path="/login" component={Login} />
