@@ -7,14 +7,14 @@ import { Link } from "react-router-dom";
 
 export default function HomePage() {
   const dispatch = useDispatch();
-  console.log("Hello");
+  //console.log("Hello");
   useEffect(() => {
-    console.log("useeffect");
+    // console.log("useeffect");
     dispatch(homePages);
   }, []);
 
   const postPages = useSelector(selectAllHomePages);
-  console.log("PAGES", postPages);
+  // console.log("PAGES", postPages);
 
   //Buffer render time
   if (!postPages) return <div>Loading...</div>;

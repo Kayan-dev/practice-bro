@@ -33,7 +33,7 @@ export default function DetailPage() {
  == I dont know since they are all created @ the SAME time
  */
   const sorted_details = [...details].sort(compare_time);
-  console.log("sorted:", sorted_details);
+  // console.log("sorted:", sorted_details);
 
   //filter stories based on homePage ID
   const filteredResult = sorted_details.filter(function (page) {
@@ -41,7 +41,7 @@ export default function DetailPage() {
     return homePageID === page.homepageId;
   });
 
-  console.log("Filtered", filteredResult);
+  // console.log("Filtered", filteredResult);
   return (
     <div>
       <Jumbotron>
@@ -67,5 +67,3 @@ export default function DetailPage() {
     </div>
   );
 }
-
-// if (homepageId === postPages.id)

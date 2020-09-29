@@ -18,17 +18,17 @@ export function postsFetched(listofHomepages) {
 
 export async function homePages(dispatch, getState) {
   try {
-    console.log("And this?");
+    //  console.log("And this?");
     dispatch(appLoading());
 
-    console.log("Hello");
+    //  console.log("Hello");
 
     const [pageRes, userRes] = await Promise.all([
       axios.get(`${apiUrl}/home`),
       //   axios.get(`${apiUrl}/home/${id}`),
     ]);
 
-    console.log("All PAGES", pageRes.data);
+    //console.log("All PAGES", pageRes.data);
     const bitch = pageRes.data;
     dispatch(appDoneLoading());
     dispatch(
@@ -40,9 +40,9 @@ export async function homePages(dispatch, getState) {
     // console.log("USER PAGE", userRes);
   } catch (error) {
     if (error) {
-      console.log("WRONG!");
+      //    console.log("WRONG!");
     } else {
-      console.log("GOOD?");
+      //     console.log("GOOD?");
     }
   }
 }

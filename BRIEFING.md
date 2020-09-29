@@ -145,16 +145,16 @@ You will be provided with a wireframe that shows an overview of the app along wi
 | Criteria                                                                  | Points |
 | ------------------------------------------------------------------------- | ------ |
 | The frontend route `/homepages/:id` displays a detail page for a homepage | 1      | CHECK |
-| The stories are displayed with a name, description and an image           | 1      |
-| The homepage and its stories are queried from the database using 1 query  | 2      |
-| The homepage has a backgroundColor and color as specified by their user   | 1      |
-| The stories are displayed in order, from newest to oldest (`createdAt`)   | 2      |
+| The stories are displayed with a name, description and an image           | 1      | CHECK |
+| The homepage and its stories are queried from the database using 1 query  | 2      | CHECK |
+| The homepage has a backgroundColor and color as specified by their user   | 1      | CHECK |
+| The stories are displayed in order, from newest to oldest (`createdAt`)   | 2      | JA misschien |
 | Total                                                                     | 7      |
 
 ### 3. As a logged in user I want to be able to view my page and delete my own stories
 
 - When you are logged in, there should be a link in the navbar to `My page`
-- When you click that link you see the page belonging in to your user and its stories
+- When you click that link you see the page belonging to your user and its stories
 - Ideally, we add the user's homepage to the information being fetched when we login
 - That means modifying the `/me` and `/login` endpoints to also send your homepage in the response
 - Alternatively fetch the data from the endpoint set up for feature #2 (detail page)
@@ -162,11 +162,11 @@ You will be provided with a wireframe that shows an overview of the app along wi
 
 | Criteria                                                                                                | Points |
 | ------------------------------------------------------------------------------------------------------- | ------ |
-| You see a `My page` link in the navbar (but only when you're logged in)                                 | 1      |
-| When you click `My page` you see your homepage and your stories                                         | 1      |
-| Your homepage & stories are fetched using the `/me` and `/login` endpoints                              | 2      |
-| Your homepage's details are managed by redux                                                            | 2      |
-| On `My page`, stories are displayed with a `Delete Story` button which lets them delete their own story | 2.5    |
+| You see a `My page` link in the navbar (but only when you're logged in)                                 | 1      | CHECK |
+| When you click `My page` you see your homepage and your stories                                         | 1      | Soort van check |
+| Your homepage & stories are fetched using the `/me` and `/login` endpoints                              | 2      | En dit dan? |
+| Your homepage's details are managed by redux                                                            | 2      | CHECK |
+| On `My page`, stories are displayed with a `Delete Story` button which lets them delete their own story | 2.5    | CHECK |
 | The story is removed from the page without refreshing                                                   | 1.5    |
 | Total                                                                                                   | 10     |
 
@@ -181,9 +181,9 @@ You will be provided with a wireframe that shows an overview of the app along wi
 
 | Criteria                                                                                          | Points |
 | ------------------------------------------------------------------------------------------------- | ------ |
-| When a user sign's up a homepage is created and saved to the database with the correct attributes | 3      |
-| The homepage is sent in the response of `/signup` along with the new user                         | 1      |
-| The homepage is stored in the redux store in the frontend                                         | 1      |
+| When a user sign's up a homepage is created and saved to the database with the correct attributes | 3      | Check, maar homepage is niet gekoppeld |
+| The homepage is sent in the response of `/signup` along with the new user                         | 1      | CHECK |
+| The homepage is stored in the redux store in the frontend                                         | 1      | check |
 | Total                                                                                             | 5      |
 
 ### 5. As a logged in user I want to be able to post stories on homepage, so I can share my adventures with the world
