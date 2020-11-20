@@ -12,7 +12,7 @@ export default function StoryCarousel(props) {
     dispatch(deleteStory(id));
   };
   return (
-    <Carousel className="mt-5">
+    <Carousel className="mt-4">
       {props.homepage.stories.map((story) => {
         return (
           <Carousel.Item key={story.id}>

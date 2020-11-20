@@ -195,12 +195,12 @@ You will be provided with a wireframe that shows an overview of the app along wi
 
 | Criteria                                                                            | Points |
 | ----------------------------------------------------------------------------------- | ------ |
-| There is a button with `Post a cool story bro` on `My page`                         | 0.5    |
-| Clicking the button makes a form appear with the correct inputs for posting a story | 1.5    |
-| When a user enters an imageUrl, they can see a preview of the image                 | 1      |
-| When the form is submitted a request is sent to the server to create the story      | 3      |
-| The request uses JWT authorization                                                  | 2      |
-| The user sees a success message if the story was posted successfully                | 1      |
+| There is a button with `Post a cool story bro` on `My page`                         | 0.5    | check
+| Clicking the button makes a form appear with the correct inputs for posting a story | 1.5    | check
+| When a user enters an imageUrl, they can see a preview of the image                 | 1      | kinda
+| When the form is submitted a request is sent to the server to create the story      | 3      | check
+| The request uses JWT authorization                                                  | 2      | geen idee
+| The user sees a success message if the story was posted successfully                | 1      | check
 | The success message is an alert, confirm or prompt popup or console.log             | -1     |
 | Total                                                                               | 9      |
 
@@ -215,11 +215,11 @@ You will be provided with a wireframe that shows an overview of the app along wi
 
 | Criteria                                                                    | Points |
 | --------------------------------------------------------------------------- | ------ |
-| There is a button with `Edit my page` on `My page` that makes a form appear | 1.5    |
-| The form has inputs for the homepages attributes                            | 0.5    |
-| The values in the form start as the current values for your homepage        | 2.5    |
+| There is a button with `Edit my page` on `My page` that makes a form appear | 1.5    | check
+| The form has inputs for the homepages attributes                            | 0.5    | check
+| The values in the form start as the current values for your homepage        | 2.5    | check
 | When the form is submitted a request is sent to update the users hompage    | 2      |
-| The request makes use of JWT authorization                                  | 1      |
+| The request makes use of JWT authorization                                  | 1      | check
 | The user can see the results of their update without refreshing the page    | 2.5    |
 | Total                                                                       | 10     |
 

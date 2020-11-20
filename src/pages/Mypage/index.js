@@ -60,6 +60,7 @@ export default function MyPage() {
 
         {postStoryMode ? (
           <Card>
+            pm ru
             <StoryForm />
           </Card>
         ) : null}
